@@ -18,8 +18,8 @@ duplicates = []
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
-# names_1_tree = BinarySearchTree("")
 
+# names_1_tree = BinarySearchTree("")
 # for name in names_1:
 #     names_1_tree.insert(name)
 
