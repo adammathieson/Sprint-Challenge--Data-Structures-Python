@@ -19,17 +19,24 @@ class RingBuffer:
     #   self.storage.append(item)
 
   def get(self):
-    pass
+    print_list = []
+    for i in self.storage:
+      if i != None:
+        print_list.append(i)
+
+    print("======>>>>>>", print_list)
+    return print_list
 
 
 
-test = RingBuffer(3)
+# test = RingBuffer(3)
 
 # test.storage.append('something')
 
-test.append('test')
-test.append('test2')
-test.append('test3')
-test.append('test4')
+# test.append('test')
+# test.append('test2')
+# test.append('test3')
+# test.append('test4')
+# test.get()
 
-print(test.storage)
+# print(test.storage)
