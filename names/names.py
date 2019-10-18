@@ -1,5 +1,6 @@
 import time
 from binary_search_tree import BinarySearchTree
+from merge_sort import merge_sort
 
 start_time = time.time()
 
@@ -17,14 +18,25 @@ duplicates = []
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
-names_1_tree = BinarySearchTree("")
+# names_1_tree = BinarySearchTree("")
 
-for name in names_1:
-    names_1_tree.insert(name)
+# for name in names_1:
+#     names_1_tree.insert(name)
+
+# for name in names_2:
+#     if names_1_tree.contains(name):
+#         duplicates.append(name)
+
+# Stretch
+names_1_hash = {}
+for i, e in enumerate(names_1):
+    names_1_hash[e] = i
 
 for name in names_2:
-    if names_1_tree.contains(name):
+    if name in names_1_hash:
         duplicates.append(name)
+# print(names_1_hash)
+
 
 
 end_time = time.time()
